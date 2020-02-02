@@ -35,7 +35,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 							<div id="orderDoc" x:publishsource="Excel">
 								<form action="/part/orderPro" method="post">
 									<table class=xl6329231
-									 style='border-collapse:collapse;table-layout:fixed;width:100%;'  th:each="i:${info}">
+									 style='border-collapse:collapse;table-layout:fixed;width:100%;' border="1px" th:each="i:${info}">
 									<col class=xl6329231 width=27 span=24 style='mso-width-source:userset;
 									mso-width-alt:864;width:20pt'>
 										<tr height=30 style='mso-height-source:userset;height:22.5pt'>
@@ -225,17 +225,18 @@ xmlns="http://www.w3.org/TR/REC-html40">
 										<tr height=35 style='mso-height-source:userset;height:26.25pt'>
 										</tr>
 									</table>
-									<button class="btn btn-warning" type="button">확인</button>
+									<input class="btn btn-warning" type="button" value="인쇄하기" onclick="info_print()">
 								</form>
 							</div>
 						</div>
 					</div>	
 				</div>
 			</div>
-			<div class="col-md-4">
-				<input type="button" value="print" onclick="info_print()">
+			<!-- <div class="col-md-4">
+				
+				<button class="btn btn-warning" type="button">확인</button>
 				<input type="button" value="fullScreen" onclick="openFullscreen()">
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<script type="text/javascript">

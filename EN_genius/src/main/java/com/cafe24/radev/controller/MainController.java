@@ -1,7 +1,5 @@
 package com.cafe24.radev.controller;
 
-import java.util.List;
-
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,10 +24,11 @@ public class MainController {
 		return "/index";
 	}
 	
-//	@GetMapping("/main/")
-//	public String main() {
-//		return "/login/main";
-//	}
+	/*
+	 * @GetMapping("/in") public String index3() { return "/index3"; }
+	 */
+	
+
 	@GetMapping("/main/recSearchMain")
 	public String recSearchMain() {
 		return "/login/recSearchMain";

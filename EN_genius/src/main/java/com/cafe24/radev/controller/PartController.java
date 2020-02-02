@@ -190,12 +190,14 @@ public class PartController {
 	 * @return
 	 */
 	@PostMapping(value = "/part/cartCall", produces = "application/json")
-	public @ResponseBody List<Part> addcartCall(
-		@RequestParam(value = "checkvalues[]", required = false) List<String> checks,HttpSession session) {
+	public @ResponseBody Part addcartCall(
+		//@RequestParam(value = "checkvalues[]", required = false) List<String> checks,HttpSession session) {
+		@RequestParam(value = "checkvalues", required = false) String checks,HttpSession session) {
 		System.out.println("partCart/ajax호출/컨트롤러");
 		System.out.println(checks + "<-partCart/ajax호출/컨트롤러");
 		
-		return partService.addCart(checks,session);
+		//return partService.addCart(checks,session);
+		return partService.partSelectForOrder(checks, session);
 	};
 
 	/**

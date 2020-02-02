@@ -31,8 +31,6 @@
 		    var writer;
 		    var	update;
 		    var aa=new Array();
-			    
-		   
 			var request = $.ajax({
 					url: "/part/test",
 					method: "POST",
@@ -88,7 +86,7 @@
 			                'info': "현제페이지 _PAGE_ <br> 전체페이지 _PAGES_",
 			                'infoEmpty': "목록이 없습니다.",
 			                'infoFiltered': "(다시 시도 해주세요)",
-			                'search':	"검색 :"            	 
+			                'search':	"검색 :"       	 
 			            }
 			        } );
 				});
@@ -98,32 +96,23 @@
 </script>
  
 
- <div class="animated fadeIn">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card">
-					<div class="card-header">
-						<strong class="card-title">부품목록</strong>
-					</div>
-					<div class="card-body">
-						<div id="bootstrap-data-table_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
-							<div style="width:800px;margin:40px auto 0">
-								<table id="example" class="table" style="width:100%;">
-									
-								</table>
-							</div>
+<div class="animated fadeIn">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-header">
+					<strong class="card-title">부품목록</strong>
+				</div>
+				<div class="card-body">
+					<div id="bootstrap-data-table_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer">
+						<div style="width:800px;margin:40px auto 0">
+							<table id="example" class="table" style="width:100%;"></table>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="card" id="card">
-				
-				</div>
-			</div>
-		</div>
+	</div>
 </div>
  
 	</th:block>
